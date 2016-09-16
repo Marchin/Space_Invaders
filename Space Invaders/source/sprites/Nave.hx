@@ -12,11 +12,11 @@ import sprites.Disparo;
  */
 class Nave extends FlxSprite
 {
-	private var disp:Disparo;
+	public var disp:Disparo;
 	public function new(?X:Float=0, ?Y:Float=0, ?SimpleGraphic:FlxGraphicAsset) 
 	{
 		super(X, Y, SimpleGraphic);
-		loadGraphic("assets/images/Nave.png");
+		loadGraphic("assets/images/Nave2.png");
 		
 	}
 	
@@ -30,7 +30,7 @@ class Nave extends FlxSprite
 			x += 2;
 		if (FlxG.keys.justPressed.SPACE && Reg.dispFlag==0)
 		{
-			disp = new Disparo(x+width/2,y-width/2);
+			disp = new Disparo(x+width/2,y);
 			FlxG.state.add(disp);
 			Reg.dispFlag = 1;
 		}

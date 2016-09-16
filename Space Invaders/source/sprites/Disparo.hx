@@ -1,7 +1,9 @@
 package sprites;
 
+import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.system.FlxAssets.FlxGraphicAsset;
+import sprites.Enemy;
 
 /**
  * ...
@@ -28,6 +30,7 @@ class Disparo extends FlxSprite
 			destroy();
 			Reg.dispFlag = 0;
 		}
+		
 	}
 	
 }
