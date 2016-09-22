@@ -30,20 +30,12 @@ class ApplicationMain {
 		var types = [];
 		
 		
-		urls.push ("assets/data/data-goes-here.txt");
-		types.push (lime.Assets.AssetType.TEXT);
+		urls.push ("assets/images/Nave.png");
+		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/images-go-here.txt");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/music/music-goes-here.txt");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/sounds/sounds-go-here.txt");
-		types.push (lime.Assets.AssetType.TEXT);
+		urls.push ("assets/images/Nave2.png");
+		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
 		urls.push ("flixel/sounds/beep.ogg");
@@ -127,7 +119,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "1",
+			build: "100",
 			company: "HaxeFlixel",
 			file: "Space Invaders",
 			fps: 60,
@@ -145,13 +137,13 @@ class ApplicationMain {
 					display: 0,
 					fullscreen: false,
 					hardware: false,
-					height: 144,
+					height: 432,
 					parameters: "{}",
 					resizable: false,
 					stencilBuffer: true,
 					title: "Space Invaders",
 					vsync: true,
-					width: 160,
+					width: 480,
 					x: null,
 					y: null
 				},
@@ -169,7 +161,7 @@ class ApplicationMain {
 		
 		#if (js && html5)
 		#if (munit || utest)
-		openfl.Lib.embed (null, 160, 144, "000000");
+		openfl.Lib.embed (null, 480, 432, "000000");
 		#end
 		#else
 		create ();

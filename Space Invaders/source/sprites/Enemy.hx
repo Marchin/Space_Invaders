@@ -3,6 +3,7 @@ package sprites;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.system.FlxAssets.FlxGraphicAsset;
+import sprites.Disparo;
 
 /**
  * ...
@@ -15,36 +16,37 @@ class Enemy extends FlxSprite
 	
 	
 */
+	public var disp:Disparo;
+	
 	public function new(?X:Float=0, ?Y:Float=0, ?SimpleGraphic:FlxGraphicAsset) 
 	{
 		super(X, Y, SimpleGraphic);
 		
-		makeGraphic(12, 8,0xFFFFFFFF);
+		//makeGraphic(12, 8, 0xFFFFFFFF);
+		disp = new Disparo();
+		disp.kill();
+		
 	}
 	
 	override public function update(elapsed:Float):Void
 	{
 		super.update(elapsed);
-	/*	
-		var mov:Int = 2;
 		
-		x += mov;
-		
-		if ( x < 0 && LeftF == 0)
+	}
+	
+	
+	public function getShot():Disparo	
+	{
+		return disp;
+	}
+	
+	public function shot():Void
+	{	
+		if (this.alive)
 		{
-			mov = -mov;
-			y += 2	;
-			LeftF = 1;
-			RightF = 0;
+			disp = new Disparo(x+width/2, y,null, "ABAJO");
+			FlxG.state.add(disp);
+			Reg.dispEnemy = 1;
 		}
-		
-		
-		if ( (x > FlxG.width - width) && RightF == 0)
-		{
-			mov = -mov;
-			y += 2	;
-			LeftF = 0;
-			RightF = 1;
-		}*/
 	}
 }

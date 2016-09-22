@@ -57,7 +57,7 @@ class NMEPreloader extends Sprite
 	
 	public function getHeight():Float
 	{
-		var height = 600;
+		var height = 432;
 		
 		if (height > 0) {
 			

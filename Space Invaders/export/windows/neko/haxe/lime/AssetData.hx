@@ -16,18 +16,24 @@ class AssetData {
 		
 		if (!initialized) {
 			
-			path.set ("assets/data/data-goes-here.txt", "assets/data/data-goes-here.txt");
-			type.set ("assets/data/data-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
-			path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
-			type.set ("assets/images/images-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+			path.set ("assets/images/Enemy0.png", "assets/images/Enemy0.png");
+			type.set ("assets/images/Enemy0.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Enemy1.png", "assets/images/Enemy1.png");
+			type.set ("assets/images/Enemy1.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Enemy2.png", "assets/images/Enemy2.png");
+			type.set ("assets/images/Enemy2.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Nave.png", "assets/images/Nave.png");
 			type.set ("assets/images/Nave.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Nave2.png", "assets/images/Nave2.png");
 			type.set ("assets/images/Nave2.png", Reflect.field (AssetType, "image".toUpperCase ()));
-			path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
-			type.set ("assets/music/music-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
-			path.set ("assets/sounds/sounds-go-here.txt", "assets/sounds/sounds-go-here.txt");
-			type.set ("assets/sounds/sounds-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+			path.set ("assets/images/Shield1.png", "assets/images/Shield1.png");
+			type.set ("assets/images/Shield1.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Shield2.png", "assets/images/Shield2.png");
+			type.set ("assets/images/Shield2.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Shield3.png", "assets/images/Shield3.png");
+			type.set ("assets/images/Shield3.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Shield4.png", "assets/images/Shield4.png");
+			type.set ("assets/images/Shield4.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("flixel/sounds/beep.ogg", "flixel/sounds/beep.ogg");
 			type.set ("flixel/sounds/beep.ogg", Reflect.field (AssetType, "sound".toUpperCase ()));
 			path.set ("flixel/sounds/flixel.ogg", "flixel/sounds/flixel.ogg");
