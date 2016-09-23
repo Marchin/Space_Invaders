@@ -16,15 +16,15 @@ class Disparo extends FlxSprite
 	{
 		super(X, Y, SimpleGraphic);
 		
-		makeGraphic(1, 3, 0xFFb3cde0);
+		makeGraphic(1, 3, 0xFFB3CDE0);
 		
 		if (Dir == "ABAJO")
 		{
-			velocity.y =100;
+			velocity.y =Reg.velDisparo;
 		}
 		else
 		{
-			velocity.y =-75;
+			velocity.y =-Reg.velDisparo*0.75;
 		}
 	}
 	

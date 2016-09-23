@@ -45,4 +45,9 @@ class Nave extends FlxSprite
 	{
 		return disp;
 	}
+	
+	public function removeLive()
+	{
+		Reg.cantVidas--;
+	}
 }

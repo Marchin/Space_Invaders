@@ -1,5 +1,6 @@
 package sprites;
 
+import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.system.FlxAssets.FlxGraphicAsset;
 
@@ -7,31 +8,32 @@ import flixel.system.FlxAssets.FlxGraphicAsset;
  * ...
  * @author 
  */
-class Shield extends FlxSprite
+class Ovni extends FlxSprite
 {
-	var lives:UInt = 3;
 
 	public function new(?X:Float=0, ?Y:Float=0, ?SimpleGraphic:FlxGraphicAsset) 
 	{
 		super(X, Y, SimpleGraphic);
+		
+		loadGraphic("assets/images/Ovni.png");
+		
+		x = FlxG.width + width;
+		y = 4;
+		
+		velocity.x =-45;
 		
 	}
 	
 	override public function update(elapsed:Float):Void
 	{
 		super.update(elapsed);
-	}
+		
 	
-	public function removeLive():Void
-	{
-		if (lives > 0)
+		
+		if (x < -width)
 		{
-			lives--;
+			destroy();
 		}
-	}
-	
-	public function getLives():UInt
-	{
-		return lives;
+		
 	}
 }
